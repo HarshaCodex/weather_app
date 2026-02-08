@@ -1,0 +1,1 @@
+TEMPERATURE_2M = 'temperature_2m'
