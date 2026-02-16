@@ -20,7 +20,7 @@ class WeatherClient():
             
             city_location_results = GeocodingResponse.model_validate_json(response.text)
             
-            if city_location_results.results != 0:
+            if city_location_results.results:
                 coordinates = Coordinates()
                 coordinates.latitude = city_location_results.results[0].latitude
                 coordinates.longitude = city_location_results.results[0].longitude
